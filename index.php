@@ -31,7 +31,7 @@
         <b style="padding-left:20px;">Fecha: </b> <?php echo date("d/m/Y"); ?> <br>
         <hr>
         <!-- <h3>Realiza el pago</h3> -->
-        <input type="checkbox" name="ckbTerms" id="ckbTerms" onclick="visaNetEc3()"> <label for="ckbTerms">Acepto los <a href="#" target="_blank">Términos y condiciones</a></label>
+        <input type="checkbox" name="ckbTerms" id="ckbTerms" onclick="visaNetEc3()"><label for="ckbTerms">Acepto los <a href="#" target="_blank">Términos y condiciones</a></label>
         <form id="frmVisaNet" action="http://localhost:8082/PagoWebPhp/finalizar.php?amount=<?php echo $amount;?>&purchaseNumber=<?php echo $purchaseNumber?>">
             <script src="<?php echo VISA_URL_JS?>" 
                 data-sessiontoken="<?php echo $sesion;?>"
